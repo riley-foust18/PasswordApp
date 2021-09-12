@@ -4,4 +4,4 @@
 
 ## Deployed Website: https://riley-foust18.github.io/ProPortfolio/
 
-![](./assets/images/2021-09-12.png)
+![](./assets/images/20210912.png)
