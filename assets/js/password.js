@@ -16,6 +16,8 @@ var generatePassword = function() {
     }
   };
 
+  var finalLength = localStorage.getItem("Password length");
+
   var fullPassword = function() {
     var result = "";
 
@@ -53,10 +55,14 @@ var generatePassword = function() {
       return generatePassword();
     }
     console.log(list);
-  }
-}
 
-  
+    for ( var i = 0; i < finalLength; i++ ) {
+      result += list.charAt(Math.floor(Math.random() * list.length));
+    }
+    return result;
+  }
+  return fullPassword();
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
