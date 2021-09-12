@@ -2,6 +2,6 @@
 
 ## Simple password generator with various requirement criteria!
 
-## Deployed Website: https://riley-foust18.github.io/ProPortfolio/
+## Deployed Website: https://riley-foust18.github.io/PasswordApp/
 
-![](./assets/images/2021-09-12 14.29.06.png)
+![](./assets/images/20210912.png)
