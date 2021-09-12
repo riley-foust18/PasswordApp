@@ -16,6 +16,46 @@ var generatePassword = function() {
     }
   };
 
+  var fullPassword = function() {
+    var result = "";
+
+    var lowercaseConfirm = localStorage.getItem("lowercase letters")
+    if (lowercaseConfirm === "true") {
+      var lowercase = "abcdefghijklmnopqrstuvwxyz";
+    } else {
+      var lowercase = "";
+    }
+
+    var uppercaseConfirm = localStorage.getItem("uppercase letters")
+    if (uppercaseConfirm === "true") {
+      var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    } else {
+      var uppercase = "";
+    }
+
+    var numbersConfirm = localStorage.getItem("numbers")
+    if (numbersConfirm === "true") {
+      var numbers = "123456789";
+    } else {
+      var numbers = "";
+    }
+
+    var specialCharsConfirm = localStorage.getItem("special chracters")
+    if (specialCharsConfirm === "true") {
+      var specialChars = "!@#$%&*";
+    } else {
+      var specialChars = "";
+    };
+
+    var list = (lowercase + uppercase + numbers + specialChars);
+    if (list === "") {
+      alert("Please select at least one criteria for the password.")
+      return generatePassword();
+    }
+    console.log(list);
+  }
+}
+
   
 
 // Get references to the #generate element
